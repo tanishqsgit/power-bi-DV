@@ -2,6 +2,24 @@
 
 This project presents an interactive Power BI analysis of Superstore sales performance. The dashboard was built from a Kaggle Superstore dataset and includes data cleaning, dimensional modeling, and report design.
 
+## Management readout
+
+| Observation | Decision or follow-up |
+| --- | --- |
+| East accounts for 31.69% of reported sales; West accounts for 30.14%. Together they contribute 61.83%. | Prioritize a regional drill-down when reviewing national performance. |
+| East leads West by 1.55 percentage points of sales share. | Compare category mix and margins before shifting targets between these two regions. |
+| Reported profit is 145.45K on 836.15K in sales, about a 17.4% aggregate profit-to-sales ratio. | Compare regional and category margins against this baseline to locate potential outliers. |
+
+These observations use the report totals and regional shares shown in the PBIX summary. Use the report filters to verify the period and product mix before drawing conclusions from a subset.
+
+```mermaid
+xychart-beta
+    title "Reported sales share for East and West (%)"
+    x-axis [East, West]
+    y-axis "Percent" 0 --> 40
+    bar [31.69, 30.14]
+```
+
 ## Dashboard coverage
 
 - Total sales, total profit, and total orders
